@@ -1,11 +1,18 @@
 const Koa = require('koa');
 const app = new Koa();
-const logger = console;
+const winston = require('winston');
+const CommonMiddleware = require('./middleware');
 
-app.use((ctx, next) => {
-  ctx.body = 'Hello World';
-  logger.log(ctx);
-  return next();
+// 记录日志信息
+winston.configure({
+  transports: [
+    new(winston.transports.File)({
+      filename: 'log/business.log'
+    }),
+  ],
 });
+
+// 路由处理逻辑
+app.use(CommonMiddleware.notFound);
 
 module.exports = app;

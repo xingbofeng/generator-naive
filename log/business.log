@@ -3,3 +3,39 @@
 {"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-24T06:58:47.305Z"}
 {"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-24T06:59:33.616Z"}
 {"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-24T07:00:03.137Z"}
+{"level":"info","message":"404","timestamp":"2017-08-25T04:23:24.973Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T09:02:49.268Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T09:03:42.102Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T09:04:39.458Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T09:05:01.620Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T09:05:50.890Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T09:06:07.675Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T09:06:13.524Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T09:07:13.834Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T11:49:10.748Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T11:49:36.137Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T11:51:27.697Z"}
+{"level":"info","message":"testService::test() >  151 ms","timestamp":"2017-08-26T11:51:27.703Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T11:52:24.385Z"}
+{"level":"info","message":"testService::test() >  116 ms","timestamp":"2017-08-26T11:52:24.392Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T11:53:00.370Z"}
+{"level":"info","message":"testService::test() >  170 ms","timestamp":"2017-08-26T11:53:00.380Z"}
+{"level":"info","message":"404","timestamp":"2017-08-26T12:03:59.736Z"}
+{"level":"info","message":"404","timestamp":"2017-08-26T12:03:59.785Z"}
+{"level":"info","message":"/test/test requestId>","timestamp":"2017-08-26T12:06:10.957Z"}
+{"level":"info","message":"queryEscape() \n      SELECT\n        *\n      FROM\n        test_table\n    ","timestamp":"2017-08-26T12:06:10.961Z"}
+{"level":"info","message":"testDao::getAllData() >  21 ms","timestamp":"2017-08-26T12:06:10.981Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T12:06:11.018Z"}
+{"level":"info","message":"testService::test() >  60 ms","timestamp":"2017-08-26T12:06:11.020Z"}
+{"level":"info","message":"/test/test requestId>","timestamp":"2017-08-26T12:07:44.908Z"}
+{"level":"info","message":"queryEscape() \n      SELECT\n        *\n      FROM\n        test_table\n    ","timestamp":"2017-08-26T12:07:44.913Z"}
+{"level":"info","message":"testDao::getAllData() >  23 ms","timestamp":"2017-08-26T12:07:44.936Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T12:07:44.993Z"}
+{"level":"info","message":"testService::test() >  85 ms","timestamp":"2017-08-26T12:07:44.997Z"}
+{"level":"info","message":"TestRouter::getTest() >  95 ms","timestamp":"2017-08-26T12:07:45.007Z"}
+{"level":"info","message":"/test/test requestId>","timestamp":"2017-08-26T12:07:45.086Z"}
+{"level":"info","message":"queryEscape() \n      SELECT\n        *\n      FROM\n        test_table\n    ","timestamp":"2017-08-26T12:07:45.087Z"}
+{"level":"info","message":"testDao::getAllData() >  4 ms","timestamp":"2017-08-26T12:07:45.092Z"}
+{"0":{"id":1,"name":"游客"},"level":"info","message":"query()","timestamp":"2017-08-26T12:07:45.095Z"}
+{"level":"info","message":"testService::test() >  8 ms","timestamp":"2017-08-26T12:07:45.095Z"}
+{"level":"info","message":"TestRouter::getTest() >  11 ms","timestamp":"2017-08-26T12:07:45.097Z"}

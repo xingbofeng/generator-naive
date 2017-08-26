@@ -12,4 +12,33 @@ module.exports = class GeneralMiddleware {
     }
     await next();
   }
+
+  static async mountApi(ctx, next) {
+    ctx.ok = data => {
+      if (data === undefined) {
+        ctx.body = {
+          code: CommonRes.SUCCESS.code,
+          msg: CommonRes.SUCCESS.msg,
+          data: {}
+        };
+      } else {
+        let body = {
+          code: CommonRes.SUCCESS.code,
+          msg: CommonRes.SUCCESS.msg,
+          data
+        };
+        if (Reflect.has(data, 'code')) {
+          body.code = data.code;
+        }
+        if (Reflect.has(data, 'msg')) {
+          body.msg = data.msg;
+        }
+        if (Reflect.has(data, 'data')) {
+          body.data = data.data;
+        }
+        ctx.body = body;
+      }
+    };
+    await next();
+  }
 };

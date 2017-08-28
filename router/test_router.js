@@ -7,6 +7,13 @@ class TestRouter extends Router {
     console.log(data);
     ctx.ok(data);
   }
+
+  async getInsert(ctx) {
+    let name = ctx.query.name;
+    let data = await testService.insert(name);
+    console.log(data);
+    ctx.ok({});
+  }
 }
 
 module.exports = new TestRouter().mount('/test');

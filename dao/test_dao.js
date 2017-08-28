@@ -15,6 +15,18 @@ class testDao extends BaseClass {
         ${this.table}
     `);
   }
+
+  insertUser(name) {
+    return DbUtil.queryEscape(`
+      INSERT INTO
+        ${this.table}
+        (name)
+      VALUES
+        (:name)
+    `, {
+      name: name
+    });
+  }
 };
 
 module.exports = new testDao();

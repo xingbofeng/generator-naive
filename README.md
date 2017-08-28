@@ -1,4 +1,5 @@
-Encounter想做的一个有意思的`nodejs`后台服务。
+# too-young-too-simple-backend
+The BackEnd of `Too Young Too Simple` Application.
 
 ## 目录
 ```
@@ -34,6 +35,7 @@ Encounter想做的一个有意思的`nodejs`后台服务。
 ├── service // 工程级服务
 │   └── test_service.js
 ├── task // 定时任务
+├── sql // DB设计
 ├── util // 公用工具类
 │   ├── common.js
 │   └── db_util.js

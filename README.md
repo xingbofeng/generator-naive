@@ -1,6 +1,8 @@
 # too-young-too-simple-backend
 The BackEnd of `Too Young Too Simple` Application.
 
+![](https://github.com/Vuexcited/Vuexcited/raw/master/Vuexcited.png)
+
 ## 目录
 ```
 .

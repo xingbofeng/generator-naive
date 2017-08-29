@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.19)
 # Database: too_young_too_simple
-# Generation Time: 2017-08-28 12:51:22 +0000
+# Generation Time: 2017-08-29 06:04:52 +0000
 # ************************************************************
 
 
@@ -41,6 +41,40 @@ CREATE TABLE `user_info` (
   `user_created_ip` char(30) DEFAULT NULL COMMENT '用户创建地IP',
   `user_login_ip` char(30) DEFAULT NULL COMMENT '用户上次登录IP',
   PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+# Dump of table xuming_reply
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `xuming_reply`;
+
+CREATE TABLE `xuming_reply` (
+  `reply_id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '回帖ID',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '回复时间',
+  `topic_id` int(11) NOT NULL COMMENT '所属的主题ID',
+  `user_id` int(11) NOT NULL COMMENT '回帖用户ID',
+  `reply_content` varchar(200) NOT NULL DEFAULT '' COMMENT '续命内容',
+  PRIMARY KEY (`reply_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+# Dump of table xuming_topic
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `xuming_topic`;
+
+CREATE TABLE `xuming_topic` (
+  `topic_id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主题ID',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '发帖时间',
+  `last_reply_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后回复时间',
+  `user_id` int(11) NOT NULL COMMENT '发起主题的用户ID',
+  `reply_count` int(11) NOT NULL DEFAULT '0' COMMENT '回复数量',
+  `topic_name` varchar(50) NOT NULL DEFAULT '' COMMENT '续命贴名称',
+  `topic_content` varchar(200) NOT NULL DEFAULT '' COMMENT '续命贴内容',
+  PRIMARY KEY (`topic_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 

@@ -82,3 +82,26 @@
 {"0":{"id":1,"name":"游客"},"1":{"id":2,"name":"Encounter"},"level":"info","message":"query()","timestamp":"2017-08-28T02:45:39.205Z"}
 {"level":"info","message":"testService::test() >  14 ms","timestamp":"2017-08-28T02:45:39.206Z"}
 {"level":"info","message":"TestRouter::getTest() >  17 ms","timestamp":"2017-08-28T02:45:39.208Z"}
+{"level":"info","message":"404","timestamp":"2018-03-30T03:51:11.168Z"}
+{"level":"info","message":"404","timestamp":"2018-03-30T03:51:11.215Z"}
+{"level":"info","message":"404","timestamp":"2018-03-30T03:51:11.687Z"}
+{"level":"info","message":"404","timestamp":"2018-03-30T03:51:17.254Z"}
+{"level":"info","message":"/test/test requestId>","timestamp":"2018-03-30T03:51:30.111Z"}
+{"level":"info","message":"queryEscape() \n      SELECT\n        *\n      FROM\n        user_info\n    ","timestamp":"2018-03-30T03:51:30.111Z"}
+{"level":"info","message":"testDao::getAllData() >  2 ms","timestamp":"2018-03-30T03:51:30.113Z"}
+[]
+{"level":"info","message":"testService::test() >  8 ms","timestamp":"2018-03-30T03:51:30.119Z"}
+{"level":"info","message":"TestRouter::getTest() >  9 ms","timestamp":"2018-03-30T03:51:30.120Z"}
+{"level":"info","message":"404","timestamp":"2018-03-30T03:51:37.183Z"}
+{"level":"info","message":"/test requestId>","timestamp":"2018-03-30T03:51:40.178Z"}
+{"level":"info","message":"queryEscape() \n      SELECT\n        *\n      FROM\n        user_info\n    ","timestamp":"2018-03-30T03:51:40.179Z"}
+{"level":"info","message":"testDao::getAllData() >  2 ms","timestamp":"2018-03-30T03:51:40.180Z"}
+[]
+{"level":"info","message":"testService::test() >  9 ms","timestamp":"2018-03-30T03:51:40.188Z"}
+{"level":"info","message":"TestRouter::getTest() >  10 ms","timestamp":"2018-03-30T03:51:40.188Z"}
+{"level":"info","message":"/test requestId>","timestamp":"2018-03-30T03:51:41.016Z"}
+{"level":"info","message":"queryEscape() \n      SELECT\n        *\n      FROM\n        user_info\n    ","timestamp":"2018-03-30T03:51:41.016Z"}
+{"level":"info","message":"testDao::getAllData() >  1 ms","timestamp":"2018-03-30T03:51:41.017Z"}
+[]
+{"level":"info","message":"testService::test() >  2 ms","timestamp":"2018-03-30T03:51:41.018Z"}
+{"level":"info","message":"TestRouter::getTest() >  3 ms","timestamp":"2018-03-30T03:51:41.019Z"}

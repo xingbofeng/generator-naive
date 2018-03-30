@@ -16,4 +16,4 @@ class TestRouter extends Router {
   }
 }
 
-module.exports = new TestRouter().mount('/test');
+module.exports = new TestRouter().mount('/');

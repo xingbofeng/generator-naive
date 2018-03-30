@@ -16,15 +16,16 @@ class testDao extends BaseClass {
     `);
   }
 
-  insertUser(name) {
+  insertUser(userXuming, userMobile) {
     return DbUtil.queryEscape(`
       INSERT INTO
         ${this.table}
-        (name)
+        (user_xuming, user_mobile)
       VALUES
-        (:name)
+        (:user_xuming, :user_mobile)
     `, {
-      name: name
+      user_xuming: userXuming,
+      user_mobile: userMobile,
     });
   }
 };

@@ -6,8 +6,8 @@ class testService extends Service {
     return await testDao.getAllData();
   }
 
-  async insert(name) {
-    return await testDao.insertUser(name);
+  async insert(userXuming, userMobile) {
+    return await testDao.insertUser(userXuming, userMobile);
   }
 };
 

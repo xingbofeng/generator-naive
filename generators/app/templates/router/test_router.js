@@ -1,5 +1,8 @@
 const Router = require('./../framework').Router;
 const testService = require('./../service/test_service');
+const joi = require('joi');
+const schema = require('./../schema');
+
 const PATH = '/test';
 
 class TestRouter extends Router {
@@ -18,8 +21,12 @@ class TestRouter extends Router {
    * @param  {Object} ctx
    */
   async postInsert(ctx) {
-    let name = ctx.query.name;
-    let data = await testService.insert(name);
+    let { error } = joi.validate(ctx.request.body, schema.postInsert);
+    if (error !== null) {
+      return ctx.fail(error.name);
+    }
+    let { userXuming, userMobile } = ctx.request.body;
+    let data = await testService.insert(userXuming, userMobile);
     console.log(data);
     ctx.ok({});
   }

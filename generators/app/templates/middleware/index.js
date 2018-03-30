@@ -39,6 +39,15 @@ module.exports = class GeneralMiddleware {
         ctx.body = body;
       }
     };
+
+    ctx.fail = error => {
+      ctx.body = {
+        code: CommonRes.FAIL.code,
+        msg: error || CommonRes.FAIL.msg,
+        data: {}
+      };
+    }
     await next();
   }
+
 };
